@@ -1,0 +1,83 @@
+/*File: style.css
+
+Connor Gonthier
+connor_gonthier@student.uml.edu
+UMass Lowell student taking course 91.61 GUI Programming I
+This was updated on 11/9/2020 with HW6 parts
+*/
+
+body{
+  text-align: center;
+  background-color: CornflowerBlue;
+}
+
+#forumButton{
+  background-color:BurlyWood ;
+  width: 80%;
+  margin: auto;
+}
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+/* styling table to be readable and scrollable with large tables */
+.tContainer{
+
+  max-height: 600px;
+  max-width:  80%;
+  overflow: scroll;
+  margin: auto;
+  background-color: white;
+}
+/*Making first row black which is the guide values*/
+#mtRow:first-child{
+  background-color: black;
+  color: white;
+}
+/* making first cell white*/
+#mtCell:first-child{
+  background-color: white;
+}
+/*Making first column black which is the guide values*/
+#mtCellC{
+  background-color: black;
+  color: white;
+}
+/* All evens to be lightgrey for readablility
+which ends up as every other column*/
+#mtCellG:nth-child(odd){
+  background-color: lightgrey;
+}
+
+/*
+HW6
+references for css styling of jQuery Errrors
+https://stackoverflow.com/questions/14913677/jquery-validation-plugin-message-style
+*/
+/* here setting the css of the label's messages to be clear and obvious that it is an error message */
+label.error{
+  background-color: white;
+  color: red;
+  margin-left: 15px;
+  border-style:groove;
+  border-color: red;
+  padding: 1px;
+
+}
+/* Here giving each input box a margin to look cleaner especially when error messages are printed */
+#minRow{
+  margin: 5px;
+}
+#maxRow{
+  margin: 5px;
+}
+#minColumn{
+  margin: 5px;
+}
+#maxColumn{
+  margin: 5px;
+}
+/* Just some Margins on submit buttonto look nicer */
+.submit{
+  margin-bottom: 3px;
+}

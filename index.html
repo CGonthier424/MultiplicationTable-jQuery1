@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+ <!-- File: index.html
+Connor Gonthier
+connor_gonthier@student.uml.edu
+UMass Lowell student taking course 91.61 GUI Programming I
+The html file from HW5 Multiplication table updated and changed to work with my jQuery 1 update for hw6
+This was updated on 11/92020
+-->
+
+
+ <html lang="en-us">
+  <head>
+  <!-- MetaTags -->
+    <meta charset= "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Connor Gonthier">
+    <link rel="stylesheet" href="style.css">
+     <title>Multiplcation Table</title>
+  </head>
+
+<body>
+
+
+
+<!-- HW5 +6 -->
+  <!-- Div to hold my Forum and buttom to submit -->
+  <div id= forumButton>
+    <h2>Multiplcation Table</h2>
+    <!-- // Trick to prevent page refresh https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit
+-->
+    <form id="forumInput" >
+      <!-- For Row --> <!-- Min Row -->
+      <label for="Enter Minumum Row Value"> Minimum-Row Value: </label><br>
+      <input type="number" id="minRow" name="minimumRow" required ><br>
+      <!-- MAX Row -->
+      <label for="Enter Maximum Row Value"> Maximum-Row Value: </label><br>
+      <input type="number" id="maxRow" name="maximumRow" required ><br>
+      <!-- For Column --> <!-- Min Column -->
+      <label for="Enter Minumum Column Value"> Minimum-Column Value: </label><br>
+      <input type="number" id="minColumn" name="minimumColumn" required ><br>
+      <!-- Max Column -->
+      <label for="Enter Maximum Column Value"> Maximum-Column Value: </label><br>
+      <input type="number" id="maxColumn" name="maximumColumn" required ><br><br>
+      <!-- Changed from button to submit input to be used with submitHandler -->
+       <input class="submit"type="submit" value="Submit">
+
+    </form>
+    <p id =ErrorOutput></p>
+
+  </div>
+
+
+<!-- the now included jQuery CDNS, and my js file include -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  <script src="validation.js"></script>
+
+</body>
