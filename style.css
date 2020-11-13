@@ -1,7 +1,5 @@
 /*File: style.css
-
-Connor Gonthier
-connor_gonthier@student.uml.edu
+Connor Gonthier - connor_gonthier@student.uml.edu
 UMass Lowell student taking course 91.61 GUI Programming I
 This was updated on 11/9/2020 with HW6 parts
 */
@@ -64,7 +62,8 @@ label.error{
   padding: 1px;
 
 }
-/* Here giving each input box a margin to look cleaner especially when error messages are printed */
+/* Here giving each input box a margin to look cleaner
+especially when error messages are printed */
 #minRow{
   margin: 5px;
 }

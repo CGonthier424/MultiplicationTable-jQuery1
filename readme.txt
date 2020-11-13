@@ -4,3 +4,7 @@ HW6 Link:https://cgonthier424.github.io/MultiplicationTable-jQuery1/
 
 GitHub: https://github.com/CGonthier424/MultiplicationTable-jQuery1
 
+Files links:
+https://github.com/CGonthier424/MultiplicationTable-jQuery1/blob/main/index.html
+https://github.com/CGonthier424/MultiplicationTable-jQuery1/blob/main/validation.js
+https://github.com/CGonthier424/MultiplicationTable-jQuery1/blob/main/style.css

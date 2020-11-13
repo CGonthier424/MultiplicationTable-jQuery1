@@ -1,13 +1,10 @@
 /*File: validation.js
-Connor Gonthier
-connor_gonthier@student.uml.edu
+Connor Gonthier - connor_gonthier@student.uml.edu
 UMass Lowell student taking course 91.61 GUI Programming I
 My multiplication table made via Javascript Enhanced with jQeuery part 1, some Table sources have been cull and left in hw5 comments
-This was created on 11/9/2020
-
-*/
-/*
-inspiration for some of the rules comes from :https://stackoverflow.com/questions/1260984/jquery-validate-less-than
+This was created on 11/9/2020 */
+/*inspiration for some of the rules comes from :
+https://stackoverflow.com/questions/1260984/jquery-validate-less-than
 This Video series usesd to learn basic of jQuery validation:
 https://www.youtube.com/watch?v=zQUbb2ZtdIc&list=PL5ze0DjYv5DaAm5eC2chbTK1Y6uoTUtZ9&index=4
 
@@ -102,7 +99,6 @@ $(document).ready(function(){
 
 // the Function actuall generating my multiplication table, untouched from HW5
 function generate_multitable() {
-  console.log("Generating...");
 
   //Here delete container holding table if it exists
   if(document.querySelector(".tContainer")){
@@ -119,7 +115,7 @@ function generate_multitable() {
   var maxC = parseInt(document.getElementById('maxColumn').value);
 
 //Error Checking
-/*
+/* Commented out to use jQuery Error Checking
 //checking that the taken in values are Valid Ints
 if ((Number.isInteger(minR)&&Number.isInteger(minC)&&Number.isInteger(maxC)&&Number.isInteger(maxR))==false){
   document.getElementById("ErrorOutput").innerHTML='All values must be valid integers';
@@ -134,8 +130,7 @@ if (minC > maxC ){
   document.getElementById("ErrorOutput").innerHTML='Enter a Minimum Column value that is less than or equal to the Max Column value';
   return 0;
 }
-*/
-  //Error Checking End
+*/ //Error Checking End
 
   // row column lengths + 2 to account for the
   // correct lenth + outer edge to show values
